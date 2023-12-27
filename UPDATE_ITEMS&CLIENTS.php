@@ -142,8 +142,8 @@ foreach ($accountName as $name) {
 
     echo "Added New Account: $name<br/>";
 }
-addAccount('Fatty Joe', 'Joe Stiff', '999-000-6666', 'joe@gmail.ca', 333666999, '1234');
-echo "Added New Account: Joe Stiff<br/>";
+addAccount('John Smith', 'John Smiff', '999-000-6666', 'joe@gmail.ca', 123456789, '1234');
+echo "Added New Account: John Smiff<br/>";
 
 // Unset Session Variables
 session_start();

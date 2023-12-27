@@ -43,7 +43,7 @@ $account = retrieveAccountData($_SESSION['currentAccount']);
                 </div>
                 <p><b>Barcode: </b><?php echo $account['username']; ?></p>
                 <p><b>Name: </b><?php echo $account['Full Name']; ?></p>
-                <p><b>Date of Birth: </b><?php echo date('F Y', strtotime($account['Date of Birth'])); ?></p>
+                <p><b>Date of Birth: </b>09/18/20</p>
             </div>
             <h2>Account Information</h2>
             <ul>
