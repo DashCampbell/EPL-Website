@@ -47,5 +47,5 @@ I made a copy of the Edmonton Public Library website from scratch. The front end
 * Pages showing the user's holds, fees, and checked out items.
 
 ## Showcase
-![](https://github.com/DashCampbell/Edmonton-Public-Library-PHP-Emulation/blob/main/EPL_website_showcase.mp4)
-  
+https://github.com/DashCampbell/Edmonton-Public-Library-PHP-Emulation/assets/90148639/105b8a19-8364-4292-a868-b1df5f6af801
+
