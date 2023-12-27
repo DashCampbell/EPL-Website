@@ -1,0 +1,817 @@
+/* Login Page */
+
+#login-page {
+    margin-top: 40px;
+}
+
+#login-page h1 {
+    color: #004b8d;
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+#login-page h2 {
+    color: #333;
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+#login-page p {
+    color: #a82009;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+#login-page input {
+    color: #333;
+    width: 200px;
+    padding: 4px;
+}
+
+#login-page input:focus {
+    outline: none;
+    border-color: #000;
+    border-radius: 4px;
+}
+
+#login-page input[type='submit'] {
+    background: #004b8d;
+    color: #fff;
+    width: auto;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 2px;
+    margin-top: 15px;
+}
+
+#login-page input[type='submit']:hover {
+    cursor: pointer;
+    background: #00305a;
+}
+
+#login-page a {
+    text-decoration: none;
+    color: #02729e;
+    margin-left: 5px;
+}
+
+#login-page a:hover {
+    text-decoration: underline;
+}
+
+/* Create Account Page */
+
+#createAccount {
+    margin-top: 50px;
+}
+
+#createAccount h1 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #00488d;
+    padding-bottom: 12px;
+    border-bottom: 5px solid #f58a11;
+    margin-bottom: 25px;
+}
+
+#createAccount ul::after {
+    clear: both;
+    display: block;
+    content: "";
+}
+
+#createAccount ul li {
+    list-style-type: none;
+    float: left;
+    width: calc(100% / 2 - 8%);
+    margin-bottom: 35px;
+}
+
+#createAccount ul li:nth-of-type(2), #createAccount ul li:nth-of-type(4), #createAccount ul li:nth-of-type(n+6) {
+    clear: left;
+}
+
+#createAccount ul li:nth-of-type(2)+li, #createAccount ul li:nth-of-type(4)+li {
+    margin-left: 8%;
+}
+
+#createAccount h2 {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+#createAccount input:not([type='submit']) {
+    font-size: 18px;
+    color: #222;
+    width: calc(100% - 12px);
+    padding: 6px;
+    margin-bottom: 5px;
+}
+
+#createAccount p {
+    color: #eb0000;
+}
+
+#createAccount input:not([type='submit']):focus {
+    outline: none;
+    border: 2px solid #222;
+    border-radius: 5px;
+}
+
+#createAccount input[type='submit'] {
+    font-size: 18px;
+    color: #fff;
+    background: #008000;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+#createAccount input[type='submit']:hover {
+    cursor: pointer;
+    background: #004d00;
+}
+
+/* Account Pages */
+
+/* Account Side Menu */
+
+.currentAccountLink {
+    background: #f2f2f2;
+    font-weight: 600;
+}
+
+#accountMenuNav {
+    width: calc(25% - 25px - 2px);
+    border: 1px solid #ddd;
+    margin-right: 25px;
+}
+
+/* Nav Header */
+
+#accountMenuNav>div {
+    color: #222;
+    padding: 15px;
+    border-top: 6px solid #333;
+    border-bottom: 3px solid #dadada;
+}
+
+#accountMenuNav>div h2 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+#accountMenuNav>div h3 span {
+    font-weight: 600;
+}
+
+/* Menu Links */
+
+#accountMenuNav li {
+    list-style-type: none;
+    border-top: 1px solid #ddd;
+}
+
+#accountMenuNav li a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 16px;
+    color: #3f4344;
+    width: calc(100% - 30px);
+    padding: 15px;
+}
+
+#accountMenuNav li a:hover {
+    background: #f4f4f4;
+}
+
+#accountMenuNav li a>span {
+    float: right;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+#accountMenuNav li a>p {
+    display: inline-block;
+    color: #026802;
+    background: #e0efe0;
+    padding: 5px 8px;
+    border-radius: 3px;
+    margin-top: 8px;
+}
+
+/* Checkout Link */
+
+#accountMenuNav li a>div {
+    background: #fff;
+    color: #026802;
+    padding: 10px 14px;
+    border-left: 3px solid #004d00;
+    margin-top: 8px;
+}
+
+#accountMenuNav li a>div h2 {
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+/* Holds Link */
+
+#accountMenuNav li a[href*='holds'] p span {
+    color: #fff;
+    background: #026802;
+    font-size: 10px;
+    padding: 3px 5px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Checked Out Page */
+
+.accountItemsPage {
+    width: 75%;
+}
+
+/* Checkout List Header */
+
+.accountItemsPage>h2 {
+    font-weight: 600;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 18px;
+}
+
+.accountItemsPage>div:not([class]) {
+    border: 1px solid #ccc;
+}
+
+.accountItemsPage>div:not([class])>h2 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #262626;
+    padding: 18px;
+}
+
+/* Total Checkout Items Text */
+
+/* Checked Out Items List */
+
+.accountItemsList {
+    background: #f2f2f2;
+    padding: 22px;
+}
+
+/* Checkboxes */
+
+.accountCheckBox {
+    display: inline-block;
+    color: #404040;
+}
+
+.accountCheckBox input {
+    display: none;
+}
+
+.accountCheckBox span {
+    float: left;
+    position: relative;
+    overflow: hidden;
+    top: 100%;
+    height: 16px;
+    width: 16px;
+    border: 2px solid #666;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+.accountCheckBox input:checked+span {
+    border-color: #00305a;
+}
+
+.accountCheckBox input:checked+span:before {
+    content: '\2714';
+    position: absolute;
+    font-size: 14px;
+    top: -2px;
+    left: -2px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    background-color: #0053a1;
+    color: #fff;
+}
+
+.accountCheckBox p {
+    float: left;
+    padding: 2px 0;
+}
+
+/* Items List */
+
+.accountItemsList ul {
+    margin-top: 14px;
+}
+
+.accountItemsList li {
+    list-style-type: none;
+    margin-bottom: 18px;
+}
+
+.accountItemsList li:after {
+    clear: both;
+    display: block;
+    content: "";
+}
+
+/* Item Check Box */
+
+.accountItemsList li>label {
+    float: left;
+}
+
+/* Item Content */
+
+.accountItemsList li>div {
+    float: left;
+    background: #fff;
+    width: calc(100% - 30px - 31px);
+    padding: 14px;
+    border: 1px solid #b9b9b9;
+    border-left: 2px solid #004d00;
+}
+
+.accountItem-left-description {
+    float: left;
+}
+
+/* Cover */
+
+.accountItem-left-description>a {
+    float: left;
+    width: 82px;
+    margin-right: 15px;
+}
+
+.accountItem-left-description>a img {
+    width: 100%;
+}
+
+/* Left Description */
+
+.accountItem-left-description>div {
+    float: left;
+}
+
+.accountItem-left-description>div a {
+    text-decoration: none;
+    color: #02729e;
+}
+
+.accountItem-left-description>div a:hover {
+    text-decoration: underline;
+}
+
+.accountItem-left-description>div>a {
+    font-size: 20px;
+}
+
+.accountItem-left-description>div>p {
+    color: #404040;
+    margin-top: 6px;
+}
+
+/* Right Description */
+
+.accountItem-right-description {
+    float: right;
+    width: 30%;
+}
+
+.accountItem-right-description p {
+    color: #026802;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.accountItem-right-description p>span {
+    background: #e0efe0;
+    padding: 6px 8px;
+    border-radius: 3px;
+}
+
+.accountItem-right-description h2 {
+    color: #404040;
+    margin: 14px 0 18px 0;
+}
+
+/* Renew Button */
+
+.accountItem-right-description input {
+    display: inline-block;
+    background: #00488d;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    border-bottom: 3px solid #00305a;
+}
+
+.accountItem-right-description input:hover {
+    background: #00305a;
+    cursor: pointer;
+}
+
+/* Renew All Menu */
+
+.account-footer-menu {
+    display: none;
+    position: fixed;
+    background: #00305a;
+    color: #fff;
+    width: calc(100% - 24%);
+    left: 0;
+    bottom: 0;
+    padding: 20px 12%;
+}
+
+.account-footer-menu span {
+    float: left;
+    padding: 10px;
+}
+
+.account-footer-menu button {
+    float: left;
+    background: #00305a;
+    color: #fff;
+    text-decoration: underline;
+    padding: 10px;
+    border: none;
+}
+
+.account-footer-menu button:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.account-footer-menu a {
+    float: right;
+    text-decoration: none;
+    font-size: 15px;
+    color: #fff;
+    padding: 10px;
+    border: 1px solid #fff;
+}
+
+.account-footer-menu a:hover {
+    text-decoration: underline;
+}
+
+/* Holds Page */
+
+.accountItem-left-description div>a:last-child {
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 6px;
+}
+
+/* Item Description */
+
+#holdsPage li>div {
+    border-left-color: #4d4d4d;
+}
+
+.holds-description h2 {
+    margin-top: 0;
+}
+
+.holds-description h2>span {
+    display: inline-block;
+    color: #3f4344;
+    background: #ccc;
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+.holds-description h2>span>span {
+    display: inline-block;
+    background: #3f4344;
+    color: #fff;
+    padding: 0 5px;
+    border-radius: 50%;
+}
+
+.holds-description h2 b {
+    font-weight: bold;
+}
+
+.holds-description input {
+    background: #666;
+    border-bottom-color: #4d4d4d;
+}
+
+.holds-description input:hover {
+    background: #4d4d4d;
+}
+
+/* Borrowed Items Page */
+
+.borrowedPage li>div {
+    border-left: 1px solid #b9b9b9;
+    width: calc(100% - 30px);
+}
+
+/* Settings Page */
+
+.account-settings section:first-child {
+    color: #333;
+    width: calc(25% - 2px);
+    border: 1px solid #ccc;
+    border-top: 5px solid #404040;
+}
+
+.account-settings section:last-child {
+    width: calc(75% - 30px);
+    margin-left: 30px;
+}
+
+/* Settings Side Menu */
+
+.account-settings section:first-child>a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    padding: 16px 15px 12px 15px;
+    border-bottom: 3px solid #dadada;
+    margin-bottom: 30px;
+}
+
+.account-settings section:first-child>a:hover {
+    background: #f4f4f4;
+}
+
+.account-settings section:first-child h1 {
+    font-size: 22px;
+    font-weight: 500;
+    border: none;
+    margin-bottom: 0;
+}
+
+.account-settings section:first-child h2 b {
+    font-weight: 700;
+}
+
+.account-settings section:first-child h3 {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+
+/* Current Change Settings Page */
+
+.currentSetting {
+    background: #eee;
+}
+
+.currentSetting a {
+    color: #404040 !important;
+}
+
+.account-settings section:first-child li {
+    list-style-type: none;
+    padding: 9px 15px;
+}
+
+.account-settings section:first-child li a {
+    text-decoration: none;
+    color: #02729e;
+}
+
+.account-settings section:first-child li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Settings Content */
+
+.account-settings section:last-child h1 {
+    padding: 16px 0;
+    border: none;
+    margin-bottom: 18px;
+}
+
+/* Account Info */
+
+.settings-page {
+    color: #404040;
+}
+
+.settings-page>div {
+    color: #333;
+    box-shadow: 0px 2px 15px 1px rgba(153, 153, 153, 0.4);
+    padding: 18px 38px;
+}
+
+.settings-page>div>div {
+    margin-bottom: 20px;
+}
+
+.settings-page>div>div:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.settings-page>div>div span {
+    float: left;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    background: #00305a;
+    padding: 6px 12px;
+    border-radius: 50%;
+}
+
+.settings-page>div>div div {
+    float: left;
+    margin-left: 15px;
+}
+
+.settings-page>div>div div a {
+    text-decoration: none;
+    color: #02729e;
+}
+
+.settings-page>div>div div a:hover {
+    text-decoration: underline;
+}
+
+.settings-page>div>p:nth-last-of-type(n+2) {
+    margin-bottom: 10px;
+}
+
+.settings-page>div p b {
+    font-weight: 600;
+}
+
+/* Change Account Info Area */
+
+.settings-page h2 {
+    font-size: 22px;
+    margin: 18px 0 12px 0;
+}
+
+.settings-page li {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+.settings-page li h4 {
+    font-weight: 600;
+}
+
+.settings-page li a {
+    color: #02729e;
+    text-decoration: none;
+}
+
+.settings-page li a:hover {
+    text-decoration: underline;
+}
+
+/* Change Account Pages */
+
+.change-settings-page {
+    color: #333;
+}
+
+.change-settings-page h2 {
+    font-size: 22px;
+    margin-bottom: 16px;
+}
+
+.change-settings-page p {
+    color: #404040;
+    line-height: 1.5em;
+    margin-top: 6px;
+}
+
+.change-settings-page p:last-of-type {
+    margin-bottom: 24px;
+}
+
+.change-settings-page b {
+    display: block;
+    font-weight: 700;
+    margin-top: 24px;
+}
+
+.change-settings-page input:not([type='submit']) {
+    color: #333;
+    width: 300px;
+    min-height: 26px;
+    padding: 4px 10px;
+    border: 1px solid #c2c2c2;
+    margin-top: 4px;
+}
+
+.change-settings-page input:not([type='submit']):focus {
+    outline: none;
+    border-color: #333;
+    border-radius: 5px;
+}
+
+.change-settings-page span {
+    color: #a82009;
+    font-size: 18px;
+    margin-left: 6px;
+}
+
+.change-settings-page h6 {
+    font-size: 12px;
+    color: #a82009;
+    margin-top: 4px;
+}
+
+.change-settings-page div {
+    margin-bottom: 22px;
+}
+
+.change-settings-page input[type='submit'] {
+    color: #fff;
+    background: #004b8d;
+    padding: 10px 12px 6px 12px;
+    border: none;
+    border-bottom: 4px solid #00305a;
+}
+
+.change-settings-page input[type='submit']:hover {
+    cursor: pointer;
+    background: #00305a;
+}
+
+@media screen and (max-width: 730px) {
+    /* Create Account Page */
+    #createAccount {
+        text-align: center;
+    }
+    #createAccount ul li {
+        width: 100%;
+        margin-bottom: 40px;
+        margin-left: 0 !important;
+    }
+    #createAccount input[type='submit'] {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    /* CheckoutPage */
+    #accountMenuNav {
+        width: calc(100% - 2px);
+        margin: 0;
+    }
+    .accountItemsPage {
+        width: 100%;
+    }
+    .accountItem-right-description {
+        width: 100%;
+        margin-top: 20px;
+    }
+    /* Account Settings Page */
+    .account-settings section:first-child {
+        width: calc(100% - 2px);
+        margin-bottom: 30px;
+    }
+    .account-settings section:last-child {
+        width: 100%;
+        margin: 0;
+    }
+    .change-settings-page input:not([type='submit']) {
+        width: calc(100% - 36px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Create Account Page */
+    #createAccount input[type='submit'] {
+        width: 100%;
+    }
+    /* Checkout page */
+    .accountItemsList {
+        padding: 5px;
+    }
+    .accountItem-right-description p>span {
+        display: block;
+        margin-bottom: 5px;
+    }
+    /* Settings Page */
+    .settings-page>div>div div {
+        clear: both;
+        margin: 8px 0 0 0;
+    }
+}
