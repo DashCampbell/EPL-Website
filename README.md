@@ -4,7 +4,9 @@ I made a copy of the Edmonton Public Library website from scratch. The front end
 ## Getting Started
 * I used XAMPP to run the code, but an equivalent may also work.
 ### Setting up the database
-1. In phpMyAdmin(for XAMPP), create a new database named 'epl'
+1. In phpMyAdmin(for XAMPP), create a new database named 'epl'.
+
+1. In config/db_connection.php change the username and password for the mysqli connection.
 
 1. Inside the database create a new table called 'epl_account' with the following columns:
     Column Name | Column Type
